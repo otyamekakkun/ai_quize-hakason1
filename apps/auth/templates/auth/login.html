@@ -1,0 +1,35 @@
+{% extends "quiz/base2.html" %}
+{% block title %}ログイン{% endblock %}
+{% block content %}
+
+<body>
+<!-- <div class="mx-auto dt-a"> -->
+    <!-- <div class="card dt-auth-login"> -->
+        <!-- <header>ログイン</header> -->
+        <h1 class="l-login__title">AI QUIZ </h1>
+        <section class="l-loginarea">
+            <p class="l-login__title_sentence">ログイン</p>
+            <form method="post" action="{{ url_for('auth.login') }}">
+             {% for message in get_flashed_messages() %}
+                <span class="dt-auth-flash">{{ message }}</span>
+                {% endfor %}
+                {{ form.csrf_token }}
+                {{ form.username(class="l-login__text",placeholder="ユーザ名") }}<br/>
+                {{ form.password(class="l-login__text",placeholder="パスワード") }}<br/>
+                {{ form.submit(class="u-loginbutton__submit") }}
+            </form>
+            <a href="{{ url_for('auth.signup') }}" class="l-loginarea__a">ログインされていない方はこちらからユーザー登録へ。</a>
+
+        </section>
+    <!-- </div> -->
+<!-- </div> -->
+<footer class="l-footer__login">
+Copyright © 2023 Taguchi kakuto
+                 Yagi takahiro
+                 Nakazima masato
+                 Asahi kei
+                 Takasu ayami 
+</footer>
+</body>
+
+<!-- {% endblock %} -->
