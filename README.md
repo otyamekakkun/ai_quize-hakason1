@@ -15,3 +15,5 @@ https://user-images.githubusercontent.com/120696740/218360995-5d93ba97-e824-4227
 
 https://user-images.githubusercontent.com/120696740/218364785-49771cd9-232b-4458-97be-8d4d3cf6bd83.png
 
+
+*クイズを始めるボタンからクイズが始まるまで1分ぐらいかかります。AIがクイズを１０問生成してから画面が切り替わりからです。
